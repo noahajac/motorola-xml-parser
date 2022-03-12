@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Noah Jacobson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorola XML Parser</title>
+</head>
+
+<body>
+    <label for="prefix"><b>Prefix:</b></label>
+    <input id="prefix" type="text" value="./fastboot"><br />
+    <label for="reboot"><b>Add Reboot Command:</b></label>
+    <input id="reboot" type="checkbox"><br />
+    <label for="relock"><b>Add Relock Commands (EXPERIMENTAL):</b></label>
+    <input id="relock" type="checkbox"><br />
+    <textarea id="input" cols="60" rows="30" placeholder="Paste XML Here"></textarea><br />
+    <button onclick="parse()">Parse</button><br />
+    <table id="md5">
+        <tr>
+            <th>Filename</th>
+            <th>MD5</th>
+        </tr>
+    </table>
+    <script src="main.js"></script>
+</body>
+
+</html>
